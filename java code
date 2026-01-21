@@ -1,0 +1,53 @@
+import java.util.*;
+
+public class CollectionRevisiting {
+
+    public static void main(String[] args) {
+
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Mango");
+        fruits.add("Apple");
+
+        System.out.println(fruits);
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.addFirst(5);
+
+        System.out.println(numbers);
+
+        Set<String> cities = new HashSet<>();
+        cities.add("Dhaka");
+        cities.add("Chittagong");
+        cities.add("Khulna");
+        cities.add("Dhaka");
+
+        System.out.println(cities);
+
+        Map<Integer, String> student = new HashMap<>();
+        student.put(101, "Ashik");
+        student.put(102, "Rahim");
+        student.put(103, "Karim");
+
+        System.out.println(student);
+
+        Iterator<String> it = fruits.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
+        }
+
+        Queue<String> queue = new LinkedList<>();
+        queue.add("Task1");
+        queue.add("Task2");
+        queue.add("Task3");
+
+        System.out.println();
+        System.out.println(queue);
+        System.out.println(queue.poll());
+        System.out.println(queue);
+    }
+}
